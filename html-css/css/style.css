@@ -37,7 +37,7 @@ header {
     font-size: 3.5rem;
     font-family: source code pro;
     font-weight: bold;
-    background-color: #4da59b;
+    background-color: var(--cor-secundaria);
     color: white;
 }
 
@@ -48,7 +48,7 @@ main {
 }
 
 aside {
-    background-color: #c4deda;
+    background-color: var(--cor-clara);
     padding: 20px;
     margin-top: 100px;
 }
