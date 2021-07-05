@@ -1,5 +1,5 @@
 # Curso Front-end
-## EBAC - Escola Britânica de Artes Criativas
+### EBAC - Escola Britânica de Artes Criativas
 
 # GIT
 - Conceitos de versionamento
@@ -17,14 +17,14 @@ Arquivo A | Versão 1 | Versão 2 Arquivo B | Versão 1 | Versão 2
 https://git-scm.com
 
 - Windows: https://git-scm.com/download/win
-- MAC: (brew): brew install git
-- Linux: (apt-get): sudo apt-get install git
+- MAC: (brew): `brew install git`
+- Linux: (apt-get): `sudo apt-get install git`
 
 
 ## Criar conta no github
 
 ## Clonar projeto
-`git clone https://github.com/dudeHQ/curso-frontend.gitˋ
+`git clone https://github.com/dudeHQ/curso-frontend.git`
 
 
 ## Commits
@@ -32,8 +32,11 @@ Informação de alteração
 - após testado todo o código
 
 `git add *`
+
 `git commit -m "mensagem"`
+
 `git push (enviar alterações para o repositório)`
+
 `git pull (puxa / trazer as alterações feitas no repositório (Github) para a minha máquina / locaslhost)`
 
 ## Git Flow
@@ -48,6 +51,7 @@ São ramificações / versões paralelas
 - versionamento 0.2.10
 
 `git checkout -b dev (cria uma branch)`
+
 `git checkout main (mudar de branch)`
 
 ### Merge
@@ -65,8 +69,10 @@ Mescla de branchs
 
 ### Configura o Gitflow
 `git flow init`
+
 `git flow feature start (nome-da-feature)`
 
 ### Configura o Gitflow
 `git flow init`
+
 `git flow feature start (nome-da-feature)`
