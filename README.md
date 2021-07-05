@@ -30,5 +30,9 @@ São ramificações / versões paralelas
 - DOD Definiition of Done: critérios de aceite
 - versionamento 0.2.10
 
+#### Comandos
+- git checkout -b dev (cria uma branch)
+- git checkout main (mudar de branch)
+
 ### Merge
 Mescla de branchs
