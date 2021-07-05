@@ -1,7 +1,7 @@
 # Curso Front-end
 ## EBAC - Escola Britânica de Artes Criativas
 
-#GIT
+# GIT
 - Conceitos de versionamento
 - Histórico
 - Controle de versão
@@ -24,16 +24,17 @@ https://git-scm.com
 ## Criar conta no github
 
 ## Clonar projeto
-'git clone https://github.com/dudeHQ/curso-frontend.git'
+`git clone https://github.com/dudeHQ/curso-frontend.gitˋ
 
 
 ## Commits
 Informação de alteração
 - após testado todo o código
-- git add *
-- git commit -m "mensagem"
-- git push (enviar alterações para o repositório)
-- git pull (puxa / trazer as alterações feitas no repositório (Github) para a minha máquina / locaslhost)
+
+`git add *`
+`git commit -m "mensagem"`
+`git push (enviar alterações para o repositório)`
+`git pull (puxa / trazer as alterações feitas no repositório (Github) para a minha máquina / locaslhost)`
 
 ## Git Flow
 Fluxo do Git
@@ -46,29 +47,26 @@ São ramificações / versões paralelas
 - DOD Definiition of Done: critérios de aceite
 - versionamento 0.2.10
 
-#### Comandos
-- git checkout -b dev (cria uma branch)
-- git checkout main (mudar de branch)
+`git checkout -b dev (cria uma branch)`
+`git checkout main (mudar de branch)`
 
 ### Merge
 Mescla de branchs
 
-Você precisa resolver conflitos manualmente
+> Você precisa resolver conflitos manualmente
 
-git merge main
+`git merge main`
 
 ### Pull requests
-Mescla de branchs no repositório
-
-Permite code review
-
-O repositório resolver os conflitos automaticamente
+- Mescla de branchs no repositório
+- Permite code review
+- O repositório resolver os conflitos automaticamente
 
 
 ### Configura o Gitflow
-- git flow init
-- git flow feature start (nome-da-feature)
+`git flow init`
+`git flow feature start (nome-da-feature)`
 
 ### Configura o Gitflow
-- git flow init
-- git flow feature start (nome-da-feature)
+`git flow init`
+`git flow feature start (nome-da-feature)`
