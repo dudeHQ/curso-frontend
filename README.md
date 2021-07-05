@@ -17,5 +17,7 @@ Informação de alteração
 - git add *
 - git commit -m "mensagem"
 - git push (enviar alterações para o repositório)
+- git pull (puxa / trazer as alterações feitas no repositório (Github) para a minha máquina / locaslhost)
 
 ## Git Flow
+Fluxo do Git
