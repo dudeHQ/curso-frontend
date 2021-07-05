@@ -1,9 +1,9 @@
 :root {
-    --cor-principal: #006e61;
+    --cor-principal: #006e62;
     --cor-secundaria: #4da59b;
-    --cor-acento: #006e61;
+    --cor-acento: #006e60;
     --cor-clara: #c4deda;
-    --cor-texto: rgb(39, 39, 39);
+    --cor-texto: #1a1a1a;
 }
 
 * {
