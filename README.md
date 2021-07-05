@@ -1,21 +1,30 @@
 # Curso Front-end
-### EBAC - Escola Britânica de Artes Criativas
+## EBAC - Escola Britânica de Artes Criativas
 
+#GIT
+- Conceitos de versionamento
+- Histórico
+- Controle de versão
+- Quem alterou
+- O quê alterou
+- Quando alterou
+- Todos os arquivos
+- Evolução contínua
+
+Arquivo A | Versão 1 | Versão 2 Arquivo B | Versão 1 | Versão 2
 
 ## Download do Git
+https://git-scm.com
 
-Windows: https://git-scm.com/download/win
-
-MAC: (brew): brew install git
-
-Linux: (apt-get): sudo apt-get install git
+- Windows: https://git-scm.com/download/win
+- MAC: (brew): brew install git
+- Linux: (apt-get): sudo apt-get install git
 
 
 ## Criar conta no github
 
-
 ## Clonar projeto
-git clone https://github.com/dudeHQ/curso-frontend.git
+'git clone https://github.com/dudeHQ/curso-frontend.git'
 
 
 ## Commits
