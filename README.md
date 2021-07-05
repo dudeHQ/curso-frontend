@@ -21,3 +21,14 @@ Informação de alteração
 
 ## Git Flow
 Fluxo do Git
+
+### Branchs
+São ramificações / versões paralelas
+
+- main / master (vai para produção, quando o projeto vai ser publicado)
+- develop
+- DOD Definiition of Done: critérios de aceite
+- versionamento 0.2.10
+
+### Merge
+Mescla de branchs
