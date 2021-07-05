@@ -21,3 +21,30 @@ Informação de alteração
 
 ## Git Flow
 Fluxo do Git
+
+### Branchs
+São ramificações / versões paralelas
+
+- main / master (vai para produção, quando o projeto vai ser publicado)
+- develop
+- DOD Definiition of Done: critérios de aceite
+- versionamento 0.2.10
+
+#### Comandos
+- git checkout -b dev (cria uma branch)
+- git checkout main (mudar de branch)
+
+### Merge
+Mescla de branchs
+Você precisa resolver conflitos manualmente
+
+git merge main
+
+### Pull requests
+Mescla de branchs no repositório
+Permite code review
+O repositório resolver os conflitos automaticamente
+
+### configura o Gitflow
+git flow init
+git flow feature start (nome-da-feature)
