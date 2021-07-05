@@ -36,6 +36,7 @@ São ramificações / versões paralelas
 
 ### Merge
 Mescla de branchs
+
 Você precisa resolver conflitos manualmente
 
 git merge main
@@ -48,3 +49,5 @@ O repositório resolver os conflitos automaticamente
 ### configura o Gitflow
 git flow init
 git flow feature start (nome-da-feature)
+=======
+
