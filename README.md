@@ -1,15 +1,22 @@
 # Curso Front-end
 ### EBAC - Escola Britânica de Artes Criativas
+
+
 ## Download do Git
 
 Windows: https://git-scm.com/download/win
+
 MAC: (brew): brew install git
+
 Linux: (apt-get): sudo apt-get install git
+
 
 ## Criar conta no github
 
+
 ## Clonar projeto
 git clone https://github.com/dudeHQ/curso-frontend.git
+
 
 ## Commits
 Informação de alteração
@@ -43,11 +50,16 @@ git merge main
 
 ### Pull requests
 Mescla de branchs no repositório
+
 Permite code review
+
 O repositório resolver os conflitos automaticamente
 
-### configura o Gitflow
-git flow init
-git flow feature start (nome-da-feature)
-=======
 
+### Configura o Gitflow
+- git flow init
+- git flow feature start (nome-da-feature)
+
+### Configura o Gitflow
+- git flow init
+- git flow feature start (nome-da-feature)
