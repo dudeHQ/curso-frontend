@@ -76,3 +76,6 @@ Mescla de branchs
 `git flow init`
 
 `git flow feature start (nome-da-feature)`
+
+## Github Desktop
+Use o Github Desktop para logar no repositório facilmente
