@@ -1,4 +1,5 @@
 # Curso Front-end
+### EBAC - Escola Britânica de Artes Criativas
 ## Download do Git
 
 Windows: https://git-scm.com/download/win
@@ -8,6 +9,7 @@ Linux: (apt-get): sudo apt-get install git
 ## Criar conta no github
 
 ## Clonar projeto
+git clone https://github.com/dudeHQ/curso-frontend.git
 
 ## Commits
 Informação de alteração
