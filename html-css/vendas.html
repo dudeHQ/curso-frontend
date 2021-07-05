@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+██    ██  ████████  ██████  
+██    ██     ██    ██    ██
+██    ██     ██    ██    ██
+ ██████      ██    ██    ██
+   ██        ██     ██████    
+
+Desenvolvido por Victor Rodrigues 
+-->
+
+<head>
+    <title>HTML - Victor Rodrigues</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tabela.css">
+
+    <link rel="shortcut icon" href="./images/favicon.png" />
+</head>
+
+<body class="container">
+    <header class="header">
+        <a href="index.html" class="logo">Curso Front-end</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="vendas.html">Finanças / Vendas</a></li>
+            <li><a href="leiaute.html">Leiaute ou <em>Layout</em>?</a></li>
+            <li><a href="contato.html">Entre em Contato</a></li>
+        </ul>
+
+
+    </header>
+
+
+    <aside>
+        <picture class="aside"><img src="./images/favicon.png" alt="logo"></picture>
+
+        <h3>Ferramentas</h3>
+        <ul class="menudesign">
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+            <li><a href="https://material.io/design" target="_blank">Material.io</a></li>
+            <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+            <li><a href="https://trello.com/" target="_blank">Trello</a></li>
+            <li><a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Color Picker</a></li>
+        </ul>
+
+        <h3>Redes Sociais</h3>
+        <ul class="social-media-list">
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>Finanças / Vendas</h1>
+        <div class="table-container">
+
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope='col'>Ano 2021</th>
+                        <th colspan="2" scope='colgroup'>Q1</th>
+                        <th colspan="2" scope='colgroup'>Q2</th>
+                        <th colspan="2" scope='colgroup'>Q3</th>
+                        <th colspan="2" scope='colgroup'>Q4</th>
+                    </tr>
+                    <tr>
+                        <td scope='col'>Produtos</td>
+                        <td scope='col'>Clientes</td>
+                        <td scope='col'>Público Alvo</td>
+                        <td scope='col'>Clientes</td>
+                        <td scope='col'>Público Alvo</td>
+                        <td scope='col'>Clientes</td>
+                        <td scope='col'>Público Alvo</td>
+                        <td scope='col'>Clientes</td>
+                        <td scope='col'>Público Alvo</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td scope="row">Produto A</td>
+                        <td>650</td>
+                        <td>800</td>
+                        <td>800</td>
+                        <td>1.000</td>
+                        <td>950</td>
+                        <td>1.200</td>
+                        <td>XX</td>
+                        <td>XX</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Produto B</td>
+                        <td>650</td>
+                        <td>800</td>
+                        <td>800</td>
+                        <td>1.000</td>
+                        <td>950</td>
+                        <td>1.200</td>
+                        <td>XX</td>
+                        <td>XX</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Produto C</td>
+                        <td>650</td>
+                        <td>800</td>
+                        <td>800</td>
+                        <td>1.000</td>
+                        <td>950</td>
+                        <td>1.200</td>
+                        <td>XX</td>
+                        <td>XX</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td scope="row">Total de Vendas</td>
+                        <td>1.950</td>
+                        <td>2.400</td>
+                        <td>2.400</td>
+                        <td>3.000</td>
+                        <td>2.850</td>
+                        <td>3.600</td>
+                        <td>XX</td>
+                        <td>XX</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer>Desenvolvido por <b>Victor Rodrigues</b></footer>
+</body>
+
+</html>

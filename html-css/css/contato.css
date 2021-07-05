@@ -1,0 +1,135 @@
+@media (min-width: 900px) {
+    .contato-grid {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
+
+.contato-col-1 h1,
+p {
+    text-align: center;
+}
+
+.redonda {
+    margin: 0 auto;
+}
+
+
+/*Formulário*/
+
+form div {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background: #d4e7e5;
+    border: 0;
+    border-bottom: 0.25rem solid #006e61;
+    border-radius: 5%;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: .1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #006e61;
+}
+
+[type="text"],
+[type="email"],
+textarea,
+label {
+    width: 100%;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f1f1f1;
+}
+
+[type="text"],
+[type="email"] {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    height: 150px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.1rem;
+    background-color: #f8f8f8;
+}
+
+#botao {
+    margin: 2rem 1rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-bottom: none;
+}
+
+[type="submit"] {
+    background-color: #006e61;
+    border: 0.2rem solid #006e61;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 10%;
+}
+
+[type="submit"]:hover {
+    background-color: #c4deda;
+    color: #006e61;
+}
+
+.row::after {
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    float: left;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.col-2 {
+    float: right;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-left: 1.5rem;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 950px) {
+    .col-1,
+    .col-2 {
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem;
+        border-bottom: 0.25rem solid #006e61;
+    }
+}
