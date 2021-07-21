@@ -26,6 +26,7 @@ body {
     float: left;
     width: 100%;
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -65,6 +66,11 @@ h4 {
 p {
     margin-bottom: 10px;
     line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ol li {
@@ -116,6 +122,30 @@ section article {
     display: block;
     float: left;
     width: 70%;
+}
+
+#tenho-interesse {
+    width: 100%;
+    background-color: #cee5f8;
+}
+
+#tenho-interesse article {
+    margin: 0 auto;
+}
+
+#tenho-interesse form,
+.cognito .c-forms-form {
+    background-color: #cee5f8 !important;
+}
+
+#tenho-interesse .cognito .c-forms-form .c-forms-form-title h2 {
+    color: var(--cor-principal);
+}
+
+#tenho-interesse .cognito label[for],
+.cognito input[type=radio],
+.cognito input[type=checkbox] {
+    color: var(--cor-principal);
 }
 
 footer {
