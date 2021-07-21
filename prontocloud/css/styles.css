@@ -135,3 +135,8 @@ footer small {
     font-size: 80%;
     display: block;
 }
+
+.cognito {
+    height: 320px;
+    overflow: hidden!important;
+}
