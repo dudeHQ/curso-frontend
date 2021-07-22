@@ -202,7 +202,7 @@ ul.social-media-list i:hover {
         grid-template-rows: auto 1fr;
     }
     article {
-        padding: 20px;
+        padding: 20px 4%;
     }
 }
 
@@ -213,7 +213,7 @@ ul.social-media-list i:hover {
         grid-template-rows: auto 1fr;
     }
     article {
-        padding: 10px;
+        padding: 10% 3%;
     }
     ul.social-media-list,
     aside p,
