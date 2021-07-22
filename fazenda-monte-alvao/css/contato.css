@@ -1,0 +1,149 @@
+h1,
+p {
+    text-align: center;
+}
+
+.contato-col-1 {
+    margin-top: 20px;
+}
+
+
+/* Cor de seleção dos textos*/
+
+::selection {
+    background: var(--color-principal);
+    color: #fff;
+}
+
+ ::-moz-selection {
+    background: var(--color-principal);
+    color: #fff;
+}
+
+.redonda {
+    background: var(--color-principal);
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
+}
+
+picture img {
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+picture img:hover {
+    opacity: .5;
+}
+
+
+/*Formulário*/
+
+form div {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background: #d4e7e5;
+    border: 0;
+    border-bottom: 0.25rem solid var(--color-principal);
+    border-radius: 5%;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: .1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+[type="text"],
+[type="email"],
+textarea,
+label {
+    width: 100%;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f1f1f1;
+}
+
+[type="text"],
+[type="email"] {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    height: 150px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.1rem;
+    background-color: #f8f8f8;
+}
+
+#botao {
+    margin: 2rem 1rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-bottom: none;
+}
+
+[type="submit"] {
+    background-color: var(--color-principal);
+    border: 0.2rem solid var(--color-principal);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20%;
+}
+
+[type="submit"]:hover {
+    background-color: #c4deda;
+    color: var(--color-principal);
+}
+
+.row::after {
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    float: left;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.col-2 {
+    float: right;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-left: 1.5rem;
+}
