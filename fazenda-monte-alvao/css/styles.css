@@ -1,112 +1,211 @@
-:root{
-    --color-principal:#024bc2;
-    --color-secundario:#cce0ff;
-    --color-terciaria:#e6f0ff;
-    --color-fundo:#f2f7ff;
-    --color-texto:#363636;
-    
+:root {
+    --color-principal: #009245;
+    --color-secundario: #dcfdeb;
+    --color-terciaria: #e6f0ff;
+    --color-fundo: #f2f7ff;
+    --color-texto: #363636;
 }
 
-html{
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+html {
     box-sizing: content-box;
-box-sizing: border-box;
-    font-size:62.5%;
+    /* box-sizing: border-box; */
+    font-size: 62.5%;
 }
 
-body{
-    width:100vw;
-    overflow:hidden;
-    background-color:var(--color-fundo);
-    
+body {
+    background-color: var(--color-fundo);
 }
-img{
-    width:100%;
+
+img {
+    width: 100%;
     height: auto;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
-article{
-    background-color:white;
-    padding: 20px;
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/pardo-suico.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
-aside{
+
+article {
+    background-color: white;
+    padding: 40px;
+}
+
+aside {
     background-color: var(--color-terciaria);
     padding: 10px;
 }
-footer{
+
+footer {
     background-color: var(--color-principal);
-    width:100%;
-    padding:20px 0;
-   
-}
-header{
-    background-color: var(--color-principal);
-    width:100%;
-    padding:20px;
-    border-bottom:1px solid #000;
+    width: 100%;
+    padding: 20px 0;
 }
 
-footer p{
-     color: white;
-     text-align:center;
+.menu-nav {
+    clear: both;
+    overflow: auto;
+    padding: 10px 30px;
+    border-bottom: 1px solid gray;
+}
+
+nav {
+    float: right;
+}
+
+.logo img {
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.menu-nav li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #009245;
+    color: #fff;
+}
+
+.menu-nav li:hover {
+    color: #009245;
+    background-color: #b0ddc5;
+}
+
+footer p {
+    color: white;
+    text-align: center;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: auto 20%;
+    display: grid;
+    grid-template-columns: auto 20%;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color:var(--color-principal);
-    margin-bottom:1.5rem;
-    font-family: 'Open Sans', sans serif;
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-principal);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
     font-weight: 800;
 }
-h1{
-    font-size:2.6rem;
-}
-h2{
-    font-size:1.8rem;
-}
-h3,h4,h5,h6{
-    font-size:1.5rem;
+
+.cognito .c-forms-form .c-forms-form-title h2 {
+    font-size: 1.8rem !important;
+    color: var(--color-principal) !important;
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 800 !important;
 }
 
-p{
-    font-size:1.4rem;
-    line-height:1.8rem;
-    font-family: 'Open Sans', sans serif;
+.cognito .c-forms-form :not(.c-question)>.c-label {
+    color: var(--color-principal) !important;
+}
+
+.cognito:not(.c-forms-actionBar) {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: normal;
     color: var(--color-texto);
-    
-}
-nav ul{
-    margin:0;
-    padding:0;
 }
 
-nav li{
-    background-color: #d9e8ff;
-    padding:1rem;
-    width:auto;
-    margin:0 0 0.3rem 0;
-    list-style-type:none;
-    
-    
+h2 {
+    font-size: 2rem;
 }
 
-nav li:hover{
-    background-color: #bfd8ff;
-    
-    
-    
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.8rem;
 }
-nav li a{
-    text-decoration:none;
-    color:var(--color-texto);
+
+p {
     font-size: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:800;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-texto);
 }
-header img{
-    width:200px !important;
-    height: auto;
+
+
+/* nav ul {
+    margin: 0;
+    padding: 0;
 }
+
+nav li {
+    background-color: #c9f1dc;
+    padding: 1rem;
+    width: auto;
+    margin: 0 0 0.3rem 0;
+    list-style-type: none;
+}
+
+nav li:hover {
+    background-color: #b0ddc5;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+} */
+
+
+/* Redes sociais */
+
+ul.social-media-list {
+    list-style-type: none;
+    padding: 0;
+    /* eliminate space between li */
+}
+
+ul.social-media-list li {
+    display: inline-block;
+    margin: 0 0.2rem;
+    padding: 5px;
+}
+
+ul.social-media-list li:hover {
+    background-color: var(--color-principal);
+    border-radius: 50%;
+}
+
+ul.social-media-list i {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+}
+
+ul.social-media-list i:hover {
+    color: white;
+}
+
+
+/* @media screen {810px
+    
+} */
