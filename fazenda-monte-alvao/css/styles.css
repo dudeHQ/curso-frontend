@@ -192,6 +192,10 @@ ul.social-media-list i:hover {
     color: white;
 }
 
+small {
+    display: block;
+}
+
 
 /* Tablet Smartphone*/
 
@@ -223,88 +227,4 @@ ul.social-media-list i:hover {
     h1 {
         font-size: 3rem;
     }
-}
-
-.container {
-    display: block;
-    float: left;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1198px;
-}
-
-#banner {
-    width: 100vw;
-    height: 60vh;
-    background-image: url("https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/pardo-suico.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.legenda-container {
-    float: right;
-    margin: 10vh 10vh 0;
-    width: 30vw;
-    background-color: rgba(255, 255, 255, .6);
-}
-
-.legenda {
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.legenda h5,
-.legenda h4 {
-    color: #254159;
-    line-height: 150%;
-}
-
-.button-cta {
-    display: inline;
-    background-color: var(--color-principal);
-    color: white;
-    font-size: 1.8rem;
-    box-shadow: 1px 1px 4px #143b1e;
-    text-decoration: none;
-    width: auto;
-    padding: 10px 15px;
-    font-weight: 300;
-    text-align: center;
-    border-radius: 15px;
-}
-
-#saiba-mais {
-    background-color: var(--color-secundario);
-    padding: 40px 0;
-}
-
-#saiba-mais p,
-#saiba-mais img {
-    width: 45%;
-    display: block;
-    float: left;
-    padding: 20px;
-}
-
-section {
-    padding: 20px 0;
-}
-
-dl {
-    margin: 20px 0;
-}
-
-dt {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 1.6rem;
-}
-
-dd {
-    font-family: Roboto;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-size: 1.4rem;
 }
