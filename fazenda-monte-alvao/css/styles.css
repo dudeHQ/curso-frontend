@@ -12,12 +12,12 @@
 
 html {
     box-sizing: content-box;
-    /* box-sizing: border-box; */
     font-size: 62.5%;
 }
 
 body {
     background-color: var(--color-fundo);
+    margin: 0;
 }
 
 img {
