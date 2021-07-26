@@ -264,4 +264,8 @@ dd {
     #banner {
         display: flex
     }
+}@media (max-width:415px) {
+    .cognito:not(.c-forms-actionBar) {
+      height: 550px
+    }
 }
