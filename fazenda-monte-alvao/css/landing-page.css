@@ -1,242 +1,278 @@
-                                              :root {
-                                                 --color-principal: #009245;
-                                                 --color-secundario: #dcfdeb;
-                                                 --color-terciaria: #e6f0ff;
-                                                 --color-fundo: #f2f7ff;
-                                                 --color-texto: #363636;
-                                             }
-                                             
-                                             body {
-                                                 box-sizing: border-box;
-                                             }
-                                             
-                                             .servicos a {
-                                                 text-decoration: none;
-                                                 color: white;
-                                             }
-                                             
-                                             .container {
-                                                 display: block;
-                                                 padding: 0;
-                                                 margin: 0 auto;
-                                                 max-width: 1198px;
-                                             }
-                                             
-                                             #banner {
-                                                 width: 100%;
-                                                 height: 60vh;
-                                                 background-image: url("https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/pardo-suico.jpg");
-                                                 background-size: cover;
-                                                 background-repeat: no-repeat;
-                                                 background-position: center;
-                                             }
-                                             
-                                             .legenda-container {
-                                                 float: left;
-                                                 margin: 10vh 10vh 0;
-                                                 width: 30vw;
-                                                 border-radius: 5px;
-                                                 background-color: rgba(255, 255, 255, .8);
-                                             }
-                                             
-                                             .legenda {
-                                                 padding: 40px 20px;
-                                             }
-                                             
-                                             .legenda p {
-                                                 margin-bottom: 3.5rem;
-                                                 font-family: 'Roboto';
-                                                 font-size: 1.7rem;
-                                             }
-                                             
-                                             .legenda h5 {
-                                                 font-family: 'Roboto';
-                                                 font-weight: 900;
-                                                 display: inline;
-                                                 font-size: 2rem;
-                                                 background-color: var(--color-principal);
-                                                 color: #fff;
-                                                 padding: 5px;
-                                                 margin-top: 20px;
-                                                 text-align: center;
-                                                 text-transform: uppercase;
-                                             }
-                                             
-                                             .button-cta {
-                                                 font-family: Roboto;
-                                                 display: inline;
-                                                 background-color: var(--color-principal);
-                                                 color: white;
-                                                 font-size: 1.8rem;
-                                                 text-decoration: none;
-                                                 width: auto;
-                                                 padding: 10px 15px;
-                                                 font-weight: bold;
-                                                 text-align: center;
-                                                 border-radius: 5px;
-                                             }
-                                             
-                                             #saiba-mais {
-                                                 background-color: var(--color-secundario);
-                                                 padding: 40px;
-                                                 height: 40vh;
-                                                 display: flex;
-                                                 flex-direction: row;
-                                                 flex-wrap: nowrap;
-                                                 align-content: center;
-                                                 align-items: center;
-                                             }
-                                             
-                                             .saiba-mais1 {
-                                                 width: 60%;
-                                                 padding: 20px;
-                                             }
-                                             
-                                             .saiba-mais1 h2 {
-                                                 font-family: Roboto;
-                                                 font-size: 3rem;
-                                                 font-weight: 900;
-                                             }
-                                             
-                                             .saiba-mais2 {
-                                                 width: 40%;
-                                             }
-                                             
-                                             dl {
-                                                 margin: 20px 0;
-                                             }
-                                             
-                                             dt {
-                                                 font-family: Roboto;
-                                                 font-weight: 500;
-                                                 font-size: 1.6rem;
-                                                 color: var(--color-principal);
-                                             }
-                                             
-                                             dd {
-                                                 font-family: Roboto;
-                                                 margin-left: 20px;
-                                                 margin-bottom: 20px;
-                                                 font-size: 1.4rem;
-                                             }
-                                             
-                                             .servicos {
-                                                 height: 30vh;
-                                                 display: flex;
-                                                 width: 100%;
-                                                 flex-direction: row;
-                                                 flex-wrap: nowrap;
-                                                 align-content: center;
-                                                 text-align: center;
-                                             }
-                                             
-                                             .servicos h6 {
-                                                 color: #fff;
-                                                 background-color: var(--color-principal);
-                                             }
-                                             
-                                             .img1 {
-                                                 flex: 1 0 auto;
-                                                 background-image: url("../images/img\ \(3\).jpg");
-                                                 background-size: cover;
-                                                 background-repeat: no-repeat;
-                                                 background-position: center;
-                                                 display: flex;
-                                                 text-align: center;
-                                                 flex-direction: row;
-                                                 align-items: flex-end;
-                                                 justify-content: center;
-                                                 width: 25%;
-                                             }
-                                             
-                                             .img2 {
-                                                 flex: 1 0 auto;
-                                                 background-image: url("../images/img\ \(4\).jpg");
-                                                 background-size: cover;
-                                                 background-repeat: no-repeat;
-                                                 background-position: center;
-                                                 display: flex;
-                                                 text-align: center;
-                                                 flex-direction: row;
-                                                 align-items: flex-end;
-                                                 justify-content: center;
-                                                 width: 25%;
-                                             }
-                                             
-                                             .img3 {
-                                                 flex: 1 0 auto;
-                                                 background-image: url("../images/img\ \(1\).jpg");
-                                                 background-size: cover;
-                                                 background-repeat: no-repeat;
-                                                 background-position: center;
-                                                 display: flex;
-                                                 text-align: center;
-                                                 flex-direction: row;
-                                                 align-items: flex-end;
-                                                 justify-content: center;
-                                                 width: 25%;
-                                             }
-                                             
-                                             .img4 {
-                                                 flex: 1 0 auto;
-                                                 background-image: url("../images/img\ \(2\).jpg");
-                                                 background-size: cover;
-                                                 background-repeat: no-repeat;
-                                                 background-position: center;
-                                                 display: flex;
-                                                 text-align: center;
-                                                 flex-direction: row;
-                                                 align-items: flex-end;
-                                                 justify-content: center;
-                                                 width: 25%;
-                                             }
-                                             
-                                             .duvidas {
-                                                 display: grid;
-                                                 width: 100%;
-                                                 padding: 20px 0;
-                                                 grid-template-columns: 30% auto;
-                                                 column-gap: 25px;
-                                                 border-bottom: 5px solid var(--color-principal);
-                                             }
-                                             
-                                             .duvidas img {
-                                                 width: 300px;
-                                                 height: auto;
-                                                 margin: 0 auto;
-                                             }
-                                             
-                                             .img-duvida {
-                                                 display: flex;
-                                                 justify-content: center;
-                                                 align-items: center;
-                                             }
-                                             
-                                             .txt-duvida {
-                                                 padding: 20px;
-                                             }
-                                             
-                                             .txt-duvida h2 {
-                                                 margin: 0;
-                                             }
-                                             
-                                             #tenho-interesse {
-                                                 display: block;
-                                                 width: 100%;
-                                                 padding: 40px 0;
-                                                 background-color: var(--color-fundo);
-                                                 overflow: hidden;
-                                             }
-                                             
-                                             #tenho-interesse h2 {
-                                                 font-family: Roboto;
-                                                 margin: 0;
-                                                 font-size: 3rem;
-                                                 font-weight: 900;
-                                                 text-align: center;
-                                             }
-                                             
-                                             .cognito:not(.c-forms-actionBar) {
-                                                 width: 100%;
-                                                 height: 450px;
-                                             }
+           :root {
+              --color-principal: #009245;
+              --color-secundario: #dcfdeb;
+              --color-terciaria: #e6f0ff;
+              --color-fundo: #f2f7ff;
+              --color-texto: #363636
+          }
+          
+          body {
+              box-sizing: border-box
+          }
+          
+          .servicos a {
+              text-decoration: none;
+              color: #fff
+          }
+          
+          .container {
+              display: block;
+              padding: 0;
+              margin: 0 auto;
+              max-width: 1198px
+          }
+          
+          #banner {
+              width: 100%;
+              height: 60vh;
+              background-image: url("https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/pardo-suico.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: block
+          }
+          
+          .legenda-container {
+              float: left;
+              margin: 10vh 10vh 0;
+              width: 30vw;
+              border-radius: 5px;
+              background-color: rgba(255, 255, 255, .7)
+          }
+          
+          .legenda {
+              padding: 40px 20px
+          }
+          
+          .legenda p {
+              margin-bottom: 3.5rem;
+              font-family: Roboto;
+              font-size: 1.7rem
+          }
+          
+          .legenda h5 {
+              font-family: Roboto;
+              font-weight: 900;
+              display: inline;
+              font-size: 2rem;
+              background-color: var(--color-principal);
+              color: #fff;
+              padding: 5px;
+              margin-top: 20px;
+              text-align: center;
+              text-transform: uppercase
+          }
+          
+          .button-cta {
+              font-family: Roboto;
+              display: inline;
+              background-color: var(--color-principal);
+              color: #fff;
+              font-size: 1.8rem;
+              text-decoration: none;
+              width: auto;
+              padding: 10px 15px;
+              font-weight: 700;
+              text-align: center;
+              border-radius: 5px
+          }
+          
+          .saiba-mais {
+              display: grid;
+              width: 100%;
+              padding: 20px 0;
+              grid-template-columns: auto 30%;
+              column-gap: 25px;
+              border-bottom: 5px solid var(--color-principal)
+          }
+          
+          .saiba-mais img {
+              width: 300px;
+              height: auto;
+              margin: 0 auto
+          }
+          
+          .img-sm {
+              display: flex;
+              justify-content: center;
+              align-items: center
+          }
+          
+          .txt-sm {
+              padding: 20px
+          }
+          
+          .txt-sm h2 {
+              margin: 0;
+              font-family: Roboto;
+              font-size: 2.5rem;
+              font-weight: bold;
+          }
+          
+          dl {
+              margin: 20px 0
+          }
+          
+          dt {
+              font-family: Roboto;
+              font-weight: 500;
+              font-size: 1.6rem;
+              color: var(--color-principal)
+          }
+          
+          dd {
+              font-family: Roboto;
+              margin-left: 20px;
+              margin-bottom: 20px;
+              font-size: 1.4rem
+          }
+          
+          .servicos {
+              height: 30vh;
+              width: 100%;
+              display: grid;
+              grid-template-columns: repeat(4, 25%);
+              text-align: center
+          }
+          
+          .servicos h6 {
+              color: #fff;
+              background-color: var(--color-principal)
+          }
+          
+          .img1 {
+              background-image: url("../images/img\ \(3\).jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              text-align: center;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+          }
+          
+          .img2 {
+              background-image: url("../images/img\ \(4\).jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              text-align: center;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+          }
+          
+          .img3 {
+              background-image: url("../images/img\ \(1\).jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              text-align: center;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+          }
+          
+          .img4 {
+              background-image: url("../images/img\ \(2\).jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              text-align: center;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+          }
+          
+          .duvidas {
+              display: grid;
+              width: 100%;
+              padding: 20px 0;
+              grid-template-columns: 30% auto;
+              column-gap: 25px;
+              border-bottom: 5px solid var(--color-principal);
+              border-top: 5px solid var(--color-principal);
+          }
+          
+          .duvidas img {
+              width: 300px;
+              height: auto;
+              margin: 0 auto
+          }
+          
+          .img-duvida {
+              display: flex;
+              justify-content: center;
+              align-items: center
+          }
+          
+          .txt-duvida {
+              padding: 20px
+          }
+          
+          .txt-duvida h2 {
+              margin: 0
+          }
+          
+          #tenho-interesse {
+              display: block;
+              width: 100%;
+              padding: 40px 0;
+              background-color: var(--color-fundo);
+              overflow: hidden
+          }
+          
+          #tenho-interesse h2 {
+              font-family: Roboto;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 900;
+              text-align: center
+          }
+          
+          .cognito:not(.c-forms-actionBar) {
+              width: 100%;
+              height: 450px
+          }
+          
+          @media (max-width:1024px) {
+              .legenda-container {
+                  width: 50vw
+              }
+          }
+          
+          @media (max-width:768px) {
+              .legenda-container {
+                  width: 70vw
+              }
+              .img-duvida,
+              .img-sm {
+                  display: none
+              }
+              .duvidas,
+              .saiba-mais {
+                  grid-template-columns: 100%;
+                  column-gap: 0
+              }
+          }
+          
+          @media (max-width:576px) {
+              .legenda-container {
+                  float: none;
+                  width: 100%;
+                  margin: 0;
+                  display: flex;
+              }
+              .servicos {
+                  grid-template-columns: none;
+                  grid-template-rows: repeat(4, 25vh);
+                  height: 100vh;
+              }
+              #banner {
+                  display: flex;
+              }
+              .legenda-container {
+                  align-items: center;
+                  border-radius: 0;
+              }
+          }
