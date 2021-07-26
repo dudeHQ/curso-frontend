@@ -49,6 +49,7 @@ footer {
     background-color: var(--color-principal);
     width: 100%;
     padding: 20px 0;
+    display: block;
 }
 
 .menu-nav {
