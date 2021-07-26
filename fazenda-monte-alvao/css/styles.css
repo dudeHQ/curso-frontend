@@ -12,12 +12,12 @@
 
 html {
     box-sizing: content-box;
-    /* box-sizing: border-box; */
     font-size: 62.5%;
 }
 
 body {
     background-color: var(--color-fundo);
+    margin: 0;
 }
 
 img {
@@ -49,6 +49,7 @@ footer {
     background-color: var(--color-principal);
     width: 100%;
     padding: 20px 0;
+    display: block;
 }
 
 .menu-nav {
@@ -87,6 +88,9 @@ nav {
 footer p {
     color: white;
     text-align: center;
+}footer a {
+    color: white;
+    text-decoration: none;
 }
 
 .wrapper {
@@ -190,6 +194,10 @@ ul.social-media-list i {
 
 ul.social-media-list i:hover {
     color: white;
+}
+
+small {
+    display: block;
 }
 
 
