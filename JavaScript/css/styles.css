@@ -1,6 +1,20 @@
-/* * {
+* {
   transition: 0.3s ease-in-out;
-} */
+}
+
+
+/* Cor de seleção dos textos*/
+
+::selection {
+  background: #007373;;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #007373;;
+  color: #fff;
+}
+
 html {
   box-sizing: content-box;
   font-size: 62.5%;
