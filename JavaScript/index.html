@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+██    ██  ████████  ██████  
+██    ██     ██    ██    ██
+██    ██     ██    ██    ██
+ ██████      ██    ██    ██
+   ██        ██     ██████   
+Desenvolvido por Victor Rodrigues 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript</title>
+    <meta name="description" content="Documento para exercícios e aulas de JavaScript">
+    <meta name="keywords" content="JavaScript, js, learning">
+    <meta name="author" content="Victor Rodrigues">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+<!-- JavaScript -->
+    <script type="text/javascript" src="js/calculo-de-media.js"></script>
+     
+</head>
+
+<body>
+    <section>
+        <h1>
+            Resultados do Curso
+            </h1>
+            <p>
+            Para ser aprovado você precisa obter 80% de 100 pontos das disciplinas listadas abaixo:
+            </p>
+            
+            <label>Digite o seu nome<input name="Name" type="text" id="nome"> </label>
+            <p>
+            Digite as notas obtida nas respectivas disciplinas (de 1 a 100):
+            </p>
+            <label>HTML<input type="number" id="html"> </label>
+            <label>CSS<input type="number" id="css"> </label>
+            <label>JavaScript<input type="number" id="js"></label>
+            
+            <button onclick="obterMedia()">Calcular média</button>
+            
+            <div id="resultado">
+            
+            </div> <!--
+            <p>
+            Parabéns!! Você foi aprovado
+            </p>
+            <p>
+            Infelizmente vocÊ não foi aprovado
+            </p> -->
+    </section>
+</body>
+</html>

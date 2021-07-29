@@ -1,0 +1,16 @@
+input, button{
+    display:block;
+    margin:20px 0;
+  }
+  
+  button{
+    padding:20px;
+  background-color:crimson;
+  color:white;
+  width:auto;
+
+  }
+
+  section{
+      background-color: burlywood;
+  }
