@@ -1,16 +1,218 @@
-input, button{
-    display:block;
-    margin:20px 0;
-  }
-  
-  button{
-    padding:20px;
-  background-color:crimson;
+/* * {
+  transition: 0.3s ease-in-out;
+} */
+html {
+  box-sizing: content-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--color-fundo);
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+button {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+  margin:20px 0;
+}
+button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: auto;
+}
+section {
+  padding: 50px 30px;
+}
+header {
+  padding: 10px 0;
+  background-color: #007373;
   color:white;
-  width:auto;
+  text-align: center;
+}
+footer {
+  background-color: #007373;
+  color:white;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+}
+.ex1 {
+  
+  display: grid;
+  grid-template-columns: 28% 68%;
+  column-gap: 4%;
+}
+.ex2 {
+  background-color: #e5f1f1;
+}#ex1 {
+  background-color: #cce3e3;
+}
 
-  }
+.wrapper-ex1 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
 
-  section{
-      background-color: burlywood;
-  }
+.img-ex1 {
+  background-image: url("../images/barco.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.img-ex2 {
+  background-image: url("../images/lobo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.img-ex3 {
+  background-image: url("../images/ovelha.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.img-ex4 {
+  background-image: url("../images/repolho.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color:#005050;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color:#005050;
+}
+h6 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color:#005050;
+}
+p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+ol {
+  counter-reset: li; /* Inicia o contador */
+  margin-left: 0; /* Remove margin padrão */
+  padding-left: 0; /* Remove padding padrão */
+}
+
+ol > li {
+  position: relative; /* Cria contexto de posicionamento */
+  margin: 0 0 6px 2em; /* margem para abrir espaço para a numeração */
+  padding: 4px 8px; /* Espaçamento em volta do conteúdo */
+  list-style: none; /* retira a numeração padrãao (o marcador da lista) */
+  border-top: 2px solid #666;
+  background: #f6f6f6;
+}
+
+ol > li:before {
+  content: counter(li); /* Define um contador como conteúdo */
+  counter-increment: li; /* Incrementa o contador de 1 */
+  /* Posicionamento e estilização do número */
+  position: absolute;
+  top: -2px;
+  left: -2em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2em; /* Espaçamento entre número e texto em navegadores que suportam conteúdo gerado, ams não o posicionam(Camino 2 por exemplo) */
+  margin-right: 8px;
+  padding: 4px;
+  border-top: 2px solid #666;
+  color: #fff;
+  background: #007373;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+ol > li:hover {
+  background: #007373;
+  color: white;
+}
+li ol,
+li ul {
+  margin-top: 6px;
+}
+ol ol li:last-child {
+  margin-bottom: 0;
+}
+
+.ex2 div {
+  margin: 10px 0;
+  padding: 1rem 2rem;
+  background: #cce3e3;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.5rem;
+ 
+}
+
+label {
+  font-size: 0.1.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #005050;
+}
+input {
+  width: 100%;
+  margin: 10px 0 5px 0;
+  color:#005050;
+}
