@@ -229,3 +229,14 @@ input {
   margin: 10px 0 5px 0;
   color:#005050;
 }
+
+/* Tablet Smartphone*/
+
+@media (max-width: 768px) {
+  main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+  }
+  
+}
