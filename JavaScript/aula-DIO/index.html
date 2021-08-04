@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript - DIO</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</head>
+<body onload="load()">
+    <h1>Título</h1>
+    <p>Olá mundo!</p>
+    
+    <button type="button" onclick="clicou(this)">Clique aqui</button>
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    
+    
+    <select onchange="funcaochange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    </body>
+</html>
