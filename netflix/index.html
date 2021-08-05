@@ -11,18 +11,24 @@ Desenvolvido por Victor Rodrigues
 -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" href="./img/favicon.png" />
+
     <title>Netflix Clone</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h2>NETFLIX</h2>
+            <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
@@ -31,11 +37,48 @@ Desenvolvido por Victor Rodrigues
             </nav>
         </div>
     </header>
-    <p>Olá mundo</p>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">MIDSOMMAR</h3>
+                <p class="descricao">
+                    Dani e Christian formam um jovem casal americano com um
+                    relacionamento prestes a desmoronar. Mas depois que uma tragédia
+                    familiar os mantém juntos, Dani, que está de luto, convida-se para
+                    se juntar a Christian e seus amigos em uma viagem para um festival
+                    de verão único em uma remota vila sueca.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                    <button role="button" class="botao"><i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item"> <img class="box-filmes" src="img/min1.jpg" alt="filme 1"></div>
+            <div class="item"> <img class="box-filmes" src="img/min2.jpg" alt="filme 2"></div>
+            <div class="item"> <img class="box-filmes" src="img/min3.jpg" alt="filme 3"></div>
+            <div class="item"> <img class="box-filmes" src="img/min4.jpg" alt="filme 4"></div>
+            <div class="item"> <img class="box-filmes" src="img/min5.jpg" alt="filme 5"></div>
+            <div class="item"> <img class="box-filmes" src="img/min6.jpg" alt="filme 6"></div>
+            <div class="item"> <img class="box-filmes" src="img/min7.jpg" alt="filme 7"></div>
+            <div class="item"> <img class="box-filmes" src="img/min8.jpg" alt="filme 8"></div>
+            <div class="item"> <img class="box-filmes" src="img/min9.jpg" alt="filme 9"></div>
+            <div class="item"> <img class="box-filmes" src="img/min10.jpg" alt="filme 10"></div>
+        </div>
+    </div>
 
-    <footer>
+    <footer></footer>
 
-    </footer>
+    <script src="https://kit.fontawesome.com/525955c45f.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Owl  -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
