@@ -7,6 +7,11 @@ function obterMedia() {
 
     var media = (html + css + js) / 3;
 
-    document.getElementById("resultado").innerHTML = "Parabéns, " + document.getElementById("nome").value + ", sua nota final é " + media+"!";
+    if (media >= 7){
+        document.getElementById("resultado").innerHTML = "Parabéns, " + document.getElementById("nome").value + ", sua nota final é " + Math.round(media)+" e você foi aprovado!";
+    }else{
+        document.getElementById("resultado").innerHTML = "Sinto muito, " + document.getElementById("nome").value + ", sua nota final é " + Math.round(media)+" e você foi reprovado!";
+    }
 
+    // document.getElementById("resultado").innerHTML = "Parabéns, " + document.getElementById("nome").value + ", sua nota final é " + media+"!";
 }

@@ -228,6 +228,15 @@ input {
   color: #005050;
 }
 
+.ex2 i {
+  color: #005050;
+  margin-left: 6px;
+}
+
+.ex2 i.fas.fa-exclamation-triangle {
+  color: #005050;
+}
+
 /* Tablet Smartphone*/
 
 @media (max-width: 768px) {
