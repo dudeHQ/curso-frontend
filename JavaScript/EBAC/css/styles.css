@@ -81,6 +81,7 @@ footer {
 .ex2 {
   background-color: #e5f1f1;
 }
+
 #ex1 {
   background-color: #cce3e3;
 }
@@ -207,7 +208,7 @@ ol ol li:last-child {
   margin-bottom: 0;
 }
 
-.ex2 div {
+.ex2 div, .ex3 div {
   margin: 10px 0;
   padding: 1rem 2rem;
   background: #cce3e3;
@@ -228,12 +229,12 @@ input {
   color: #005050;
 }
 
-.ex2 i {
+.ex2 i, .ex3 i {
   color: #005050;
   margin-left: 6px;
 }
 
-.ex2 i.fas.fa-exclamation-triangle {
+.ex2 i.fas.fa-exclamation-triangle, .ex3 i.fas.fa-exclamation-triangle {
   color: #005050;
 }
 
