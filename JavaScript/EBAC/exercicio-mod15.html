@@ -56,23 +56,21 @@ Desenvolvido por Victor Rodrigues
 
 <body>
     <header>
-        <h1>Exercícios de Lógica e JavaScrip</h1>
+        <h1>Validação de formulários com JavaScrip</h1>
     </header>
     <main>
 
-        <section class="ex3">
-            <h2>Exercício 2 - Calculo de nota com JavaScript</h2>
-            <p>Estamos muito felizes por você ter avançado no curso, utilize nossa ferramenta abaixo para descobrir a
-                média das suas notas.
-            </p>
-            <div> <label>Digite o seu nome</label><input name="Name" type="text" id="nome"></div>
-            <p><i class="fas fa-exclamation-triangle"></i><i>Atenção! Insira somente notas de 0 a 10!</i></p>
-            <div><label>Nome</label><input type="text" placeholder="Digite seu nome" id="html"></div>
-            <div><label>CSS</label><input type="number" id="css"></div>
-            <div><label>JavaScript</label><input type="number" id="js"></div>
+        <section class="ex3">         
+            <div> <label>Nome</label><input name="name" placeholder="Digite seu nome" type="text"></div>
+            <div> <label>E-mail</label><input name="email" placeholder="Digite seu e-mail" type="text"></div>
+           
+            <div><label>Telefone</label><input type="number" placeholder="Digite seu telefone com DDD" ></div>
+            <div> <label>Endereço</label><input name="text" placeholder="Digite seu endereço" type="text"></div>
+            <div><label>CEP</label><input type="number" placeholder="00000-000"></div>
+            <div> <label>Estado</label><input name="text" placeholder="UF" type="text"></div>
 
 
-            <button onclick="obterMedia()">Calcular média</button>
+            <button onclick="obterMedia()">Enviar</button>
 
             <div id="resultado">
 
@@ -86,8 +84,7 @@ Desenvolvido por Victor Rodrigues
 </footer>
 
 <!-- JavaScript -->
-<script type="text/javascript" src="js/calculo-de-media.js"></script>
-<!-- ícones -->
-<script src="https://kit.fontawesome.com/525955c45f.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="validacao.js"></script>
+
 
 </html>
