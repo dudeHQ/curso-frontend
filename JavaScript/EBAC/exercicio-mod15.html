@@ -42,6 +42,16 @@ Desenvolvido por Victor Rodrigues
             margin: 0 auto;
         }
 
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 10px;
+        }
+
+        .wrapper div {
+            margin: 0 !important;
+        }
+
         /* Tablet Smartphone*/
 
         @media (max-width: 768px) {
@@ -49,6 +59,13 @@ Desenvolvido por Victor Rodrigues
                 width: 90%;
                 padding: 30px 0px;
             }
+            .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;            
+        }
+        .wrapper div {
+            margin: 10px 0!important;
+        }
         }
     </style>
 
@@ -60,21 +77,24 @@ Desenvolvido por Victor Rodrigues
     </header>
     <main>
 
-        <section class="ex3">         
+        <section class="ex3">
             <div> <label>Nome</label><input name="name" placeholder="Digite seu nome" type="text"></div>
             <div> <label>E-mail</label><input name="email" placeholder="Digite seu e-mail" type="text"></div>
-           
-            <div><label>Telefone</label><input type="number" placeholder="Digite seu telefone com DDD" ></div>
-            <div> <label>Endereço</label><input name="text" placeholder="Digite seu endereço" type="text"></div>
-            <div><label>CEP</label><input type="number" placeholder="00000-000"></div>
-            <div> <label>Estado</label><input name="text" placeholder="UF" type="text"></div>
+
+            <div><label>Telefone</label><input name="telefone" placeholder="Digite seu telefone com DDD" type="number">
+            </div>
+            <div> <label>Endereço</label><input name="endereco" placeholder="Digite seu endereço" type="text"></div>
+            <span class="wrapper">
+                <div><label>CEP</label><input name="cep" placeholder="00000-000" type="number"></div>
+                <div> <label>Estado</label><input name="uf" placeholder="UF" type="text"></div>
+            </span>
 
 
             <button onclick="obterMedia()">Enviar</button>
 
-            <div id="resultado">
+            <!-- <div id="resultado">
 
-            </div>
+            </div> -->
         </section>
     </main>
 </body>
