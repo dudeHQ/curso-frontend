@@ -59,13 +59,15 @@ Desenvolvido por Victor Rodrigues
                 width: 90%;
                 padding: 30px 0px;
             }
+
             .wrapper {
-            display: grid;
-            grid-template-columns: 1fr;            
-        }
-        .wrapper div {
-            margin: 10px 0!important;
-        }
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .wrapper div {
+                margin: 10px 0 !important;
+            }
         }
     </style>
 
@@ -73,29 +75,45 @@ Desenvolvido por Victor Rodrigues
 
 <body>
     <header>
-        <h1>Validação de formulários com JavaScrip</h1>
+        <h1>Validação de formulários com JavaScript</h1>
     </header>
     <main>
 
         <section class="ex3">
-            <div> <label>Nome</label><input name="name" placeholder="Digite seu nome" type="text"></div>
-            <div> <label>E-mail</label><input name="email" placeholder="Digite seu e-mail" type="text"></div>
+            <div class="mensagem"></div>
+            <form name="formulario">
+                <div><label>Nome*</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="obrigatorio" />
+                </div>
 
-            <div><label>Telefone</label><input name="telefone" placeholder="Digite seu telefone com DDD" type="number">
-            </div>
-            <div> <label>Endereço</label><input name="endereco" placeholder="Digite seu endereço" type="text"></div>
-            <span class="wrapper">
-                <div><label>CEP</label><input name="cep" placeholder="00000-000" type="number"></div>
-                <div> <label>Estado</label><input name="uf" placeholder="UF" type="text"></div>
-            </span>
+                <div> <label>E-mail*</label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail" class="email" />
+                </div>
+
+                <div><label>Telefone</label>
+                    <input type="number" name="tel" id="tel" placeholder="Digite seu telefone com DDD" class="" />
+                </div>
+
+                <div> <label>Endereço*</label><input type="text" name="end" id="end" placeholder="Digite seu endereço"
+                        class="obrigatorio" />
+                </div>
+
+                <span class="wrapper">
+                    <div><label>CEP</label>
+                        <input type="number" name="cep" id="cep" placeholder="00000-000" class="numero" />
+                    </div>
+                    <div> <label>Estado</label>
+                        <input type="text" name="uf" id="uf" placeholder="UF" class="uf" />
+                    </div>
+                </span>
+
+                <div></div>
 
 
-            <button onclick="obterMedia()">Enviar</button>
-
-            <!-- <div id="resultado">
-
-            </div> -->
+                <button type="button" class="botao" onclick="validar()">Enviar</button>
+            </form>
         </section>
+
     </main>
 </body>
 <footer>
@@ -104,7 +122,7 @@ Desenvolvido por Victor Rodrigues
 </footer>
 
 <!-- JavaScript -->
-<script type="text/javascript" src="validacao.js"></script>
+<script type="text/javascript" src="js/validacao.js"></script>
 
 
 </html>
