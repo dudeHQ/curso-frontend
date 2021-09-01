@@ -238,6 +238,17 @@ input {
   color: #005050;
 }
 
+.mensagem,
+#resultado {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.erro {
+    border-color: #f00;
+}
+
 /* Tablet Smartphone*/
 
 @media (max-width: 768px) {
