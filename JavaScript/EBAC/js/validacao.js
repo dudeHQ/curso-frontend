@@ -134,7 +134,7 @@ function validaCampo(elemento) {
         event.preventDefault();
 
         if (this.value == "") {
-            document.querySelector('.mensagem').innerHTML = "*Verifique o preenchimento dos campos em vermelho";
+            document.querySelector('.mensagem').innerHTML = "*Verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -161,7 +161,7 @@ function validaCampoNumerico(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "*Verifique o preenchimento dos campos em destaque";
+            document.querySelector('.mensagem').innerHTML = "*Verifique o seu CEP foi preenchido corretamente";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -184,7 +184,7 @@ function validaEmail(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "*Verifique o preenchimento dos campos em destaque";
+            document.querySelector('.mensagem').innerHTML = "*Verifique o seu e-mail foi preenchido corretamente";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -200,13 +200,13 @@ function validaUF(elemento) {
 
         event.preventDefault();
 
-        const UFValido = /[a-z]{2}/i;
+        const UFValido = /^[a-z]{2}$/i;
         if (this.value.match(UFValido)) {
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "*Verifique o preenchimento dos campos em destaque";
+            document.querySelector('.mensagem').innerHTML = "*Verifique se a sigla do seu Estado foi preenchida corretamente";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
