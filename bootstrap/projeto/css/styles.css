@@ -1,13 +1,241 @@
-.card{
-    width: 32%;
-    float: left;
-    margin: 5px;
+:root {
+  --color-principal: #009245;
+  --color-secundario: #dcfdeb;
+  --color-terciaria: #e6f0ff;
+  --color-fundo: #f2f7ff;
+  --color-texto: #363636;
 }
 
-section{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+* {
+  transition: all 0.3s ease-in-out;
 }
-input, textarea{
-    margin-bottom: 1rem;
+body {
+  background-color: var(--color-fundo);
+}
+.card {
+  width: 32%;
+  float: left;
+  margin: 5px;
+  padding: 0;
+  border-radius: 10px;
+}
+img.img-fluid {
+  border-radius: 10px 10px 0 0;
+}
+
+section {
+  padding: 80px 0;
+}
+section.bannerprincipal {
+  padding: 0;
+}
+section.bannerprincipal p {
+  margin-top: 15px;
+}
+#sobre div.row {
+  align-items: center;
+}
+
+section#produtos {
+  background-color: var(--color-secundario);
+}
+input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--color-principal);
+  width: 100%;
+  padding: 20px 0;
+  display: block;
+}
+footer p {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+#banner {
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/pardo-suico.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.legenda-container {
+  float: left;
+  margin: 10vh 10vh 0;
+  width: 30vw;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.legenda {
+  padding: 40px 20px;
+}
+
+.legenda p {
+  font-family: Roboto;
+}
+
+.legenda h5 {
+  font-family: Roboto;
+  font-weight: 900;
+  display: inline;
+  background-color: var(--color-principal);
+  color: #fff;
+  padding: 5px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+  box-shadow: inset 0px 1px 0px 0px #80ffbb;
+  background: linear-gradient(to bottom, #06be5c 5%, #009245 100%);
+  background-color: #009245;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #009245;
+  display: inline;
+  cursor: pointer;
+  color: #fff !important;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #009245;
+  margin-top: 10px;
+}
+button:hover {
+  background: linear-gradient(to bottom, #009245 5%, #06be5c 100%);
+  background-color: #009245;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Cor de seleção dos textos*/
+
+::selection {
+  background: var(--color-principal);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: var(--color-principal);
+  color: #fff;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-principal);
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  color: var(--color-texto);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-texto);
+}
+header div.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+header img.logo {
+  margin-left: 5px;
+  width: 200px;
+  height: auto;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+li.nav-item {
+  background: linear-gradient(to bottom, #06be5c 5%, #009245 100%);
+  background-color: #009245;
+  margin-right: 7px;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 0px 0px #80ffbb;
+  border: 1px solid #009245;
+  cursor: pointer;
+}
+li.nav-item:hover {
+  background: linear-gradient(to bottom, #009245 5%, #06be5c 100%);
+  background-color: #009245;
+}
+
+li.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+li.nav-item a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .legenda-container {
+    width: 50vw;
+  }
+  .card {
+    width: 100%;
+
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .legenda-container {
+    width: 70vw;
+  }
+  header div.container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;    
+  }
+  header nav.col{
+     padding-top: 10px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .legenda-container {
+    float: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+  }
+  #banner {
+    display: flex
+}
 }
