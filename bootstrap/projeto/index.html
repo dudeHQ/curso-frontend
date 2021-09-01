@@ -22,46 +22,166 @@ Desenvolvido por Victor Rodrigues
 
     <!-- Bootstrap -->
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h1>Coluna 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit accusamus, nesciunt
-                    consequuntur libero consequatur cupiditate reprehenderit accusantium sunt atque repudiandae deleniti
-                    ducimus quis, dolor, placeat nemo eligendi impedit perferendis!</p>
-                <a class="btn btn-lg btn-success">Botão</a>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <h2>Coluna 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit accusamus, nesciunt
-                    consequuntur libero consequatur cupiditate reprehenderit accusantium sunt atque repudiandae deleniti
-                    ducimus quis, dolor, placeat nemo eligendi impedit perferendis!</p>
-                <a class="btn btn-small btn-danger">Botão</a>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit accusamus, nesciunt
+                        consequuntur libero consequatur cupiditate reprehenderit accusantium sunt atque repudiandae
+                        deleniti
+                        ducimus quis, dolor, placeat nemo eligendi impedit perferendis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit accusamus, nesciunt
+                        consequuntur libero consequatur cupiditate reprehenderit accusantium sunt atque repudiandae
+                        deleniti
+                        ducimus quis, dolor, placeat nemo eligendi impedit perferendis!</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/pexels-josh-sorenson-1714208.jpg" class="img-fluid" alt="Foto">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Produtos</h2>
+                    <div class="card">
+                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Lorem Ipsum
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam,
+                                sit animi incidunt necessitatibus placeat vitae tempore recusandae libero vero
+                                perspiciatis alias temporibus laudantium, rerum eum nisi quaerat eius culpa!</p>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-1" class="btn btn-primary">ver produto</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Lorem Ipsum
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam,
+                                sit animi incidunt necessitatibus placeat vitae tempore recusandae libero vero
+                                perspiciatis alias temporibus laudantium, rerum eum nisi quaerat eius culpa!</p>
+                                <a data-bs-toggle="modal" data-bs-target="#modal-1" class="btn btn-primary">ver produto</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Lorem Ipsum
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam,
+                                sit animi incidunt necessitatibus placeat vitae tempore recusandae libero vero
+                                perspiciatis alias temporibus laudantium, rerum eum nisi quaerat eius culpa!</p>
+                                <a data-bs-toggle="modal" data-bs-target="#modal-1" class="btn btn-primary">ver produto</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="nome" placeholder="digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="email" placeholder="digite seu email">
+                        </div>
+                        <div class="input-group">
+                            <textarea type="text" class="form-control" name="" rows="5"></textarea>
+                        </div>
+                        <button class="btn btn-lg btn-success" type="submit">Solicitar cotação</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Produto 1</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                           <tr>
+                            <th>Tamanho</th>
+                            <th>Valor</th>
+                        </tr> 
+                        </thead>
+                        <tbody>
+                         <tr>
+                            <td>P</td>
+                            <td>R$ 100</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>R$ 200</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>R$ 300</td>
+                        </tr>   
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal" >Fechar</button>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <div class="container">
-        <div class="row">
- <!-- Unidade = Largura da área dividido por 12 -->
-            <div class="col-md-5 col-sm-12">Linha 1 - coluna 1</div>
-            <div class="col-md-7 col-sm-12">Linha 1 - coluna 2</div>
-        </div>
-
-        <div class="row">
-            <div class="col">Linha 2 - coluna 1</div>
-        </div>
-        <div class="row">
-            <div class="col">Linha 3 - coluna 1</div>
-            <div class="col">Linha 3 - coluna 2</div>
-            <div class="col">Linha 3 - coluna 3</div>
-        </div>
-    </div>
     <!-- Bootstrap -->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
