@@ -1,0 +1,42 @@
+textarea.form-control {
+  width: 100% !important;
+}
+button {
+  margin-top: 0;
+}
+#botaoform {
+  margin-top: 20px;
+}
+div.carousel-caption.d-none.d-md-block h5 {
+  color: #fff;
+  text-transform: uppercase;
+}
+div.carousel-caption.d-none.d-md-block p a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+div.carousel-caption.d-none.d-md-block {
+  border-radius: 5px;
+  background: rgb(0, 146, 69);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 146, 69, 0.9026961126247374) 0%,
+    rgba(0, 211, 104, 1) 100%
+  );
+}
+select#estado.form-control {
+  color: #6c757d;
+}
+button.btn.btn-success i.fa,
+button.btn.btn-success i.fas {
+  margin-right: 5px;
+}
+div.carousel-caption.d-none.d-md-block p i {
+  margin-left: 7px;
+  color: #fff;
+}
+.icones-form{
+  margin-right: 5px;
+  color: #009244bb;
+}

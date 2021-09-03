@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--                                           
+ _____ _     _              _____       _     
+|  |  |_|___| |_ ___ ___   | __  |___ _| |___ 
+|  |  | |  _|  _| . |  _|  |    -| . | . |_ -|
+ \___/|_|___|_| |___|_|    |__|__|___|___|___|
+                                              
+Desenvolvido por Victor Rodrigues 
+-->
+
+<head>
+  <title>HTML - Victor Rodrigues</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/favicon.png" />
+  <!-- 17x17 pixels -->
+  <link rel="apple-touch-icon" href="https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/favicon.png" />
+  <link rel="apple-touch-icon" href="https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/favicon.png" />
+  <link rel="apple-touch-icon" href="https://www.fazendamontealvao.com.br/wp-content/uploads/2021/04/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <title>Cadastro</title>
+
+  <!-- Bootstrap -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/form.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#"><img class="logo" src="./images/fazenda_monte_alvao_logo.png" alt="Logo Fazenda Monte Alvão" /></a>
+      <nav class="col">
+        <ul class="nav justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#produtos">Produto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <section class="bannerprincipal">
+        <div id="banner">
+            <div class="legenda-container">
+                <div class="legenda">
+                    <h5>Adquira já o seu Pardo-Suíço</h5>
+                    <p>A raça pardo-suíça é famosa por sua robustez! Com uma constituição forte, pernas equilibradas e
+                        pés bem formados, é muito adaptável a várias condições de criação. Além disso, os animais são
+                        capazes de produzir leite até os 15 anos
+                        de idade. Entre já em contato e agregue valor ao seu pantel.</p>
+                    <a href="#contato"><button type="button">Tenho interesse</button></a>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/1.jpeg" class="w-100 d-lg-none" alt="..." />
+        <img src="./images/lg_1.png" class="w-100 d-none d-lg-block" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Somos referência em criação de pardo-suíço em MG</h5>
+          <p>
+            <a data-bs-toggle="modal" data-bs-target="#modal-1" href="#cadastro">Receba nosso conteúdo exclusivo sobre a
+              raça Pardo-Suíça no seu e-mail.</a><i class="fas fa-newspaper"></i>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/2.jpg" class="w-100 d-lg-none" alt="..." />
+        <img src="./images/lg_2.png" class="w-100 d-none d-lg-block" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Temos bezerros, vacas adultas e touros a venda!</h5>
+          <p>
+            <a data-bs-toggle="modal" data-bs-target="#modal-1" href="#cadastro">Receba nosso conteúdo exclusivo sobre a
+              raça Pardo-Suíça no seu e-mail.</a><i class="fas fa-newspaper"></i>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/3.jpg" class="w-100 d-lg-none" alt="..." />
+        <img src="./images/lg_3.png" class="w-100 d-none d-lg-block" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Temos outros produtos como leite, sêmen de pardo-suíço e silagem</h5>
+          <p>
+            <a data-bs-toggle="modal" data-bs-target="#modal-1" href="#cadastro">Receba nosso conteúdo exclusivo sobre a
+              raça Pardo-Suíça no seu e-mail.</a><i class="fas fa-newspaper"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2>Cadastro</h2>
+          <p>Faça seu cadastro para receber nossos produtos em sua casa</p>
+        </div>
+        <form class="form">
+          <div class="row">
+            <div class="col">
+              <label for="nome" class="col-form-label-sm"><i class="fas fa-user icones-form"></i>Nome</label>
+              <input required type="text" class="form-control" name="nome" placeholder="Digite seu nome" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <label for="email" class="col-form-label-sm"><i class="fas fa-envelope icones-form"></i>E-mail</label>
+              <input required type="text" class="form-control" name="email" placeholder="Digite seu e-mail" />
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <label for="email" class="col-form-label-sm"><i class="fas fa-phone-alt icones-form"></i>Telefone</label>
+              <input required type="number" class="form-control" name="tel" placeholder="Digite seu telefone" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="end" class="col-form-label-sm"><i class="fas fa-address-card icones-form"></i>Endereço Completo</label>
+              <input required type="text" name="end" id="end" placeholder="Endereço completo" class="form-control" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <input required type="text" name="complemento-end" id="complemento-end" placeholder="Complemento"
+                class="form-control" />
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <input required type="text" name="bairro" id="bairro" placeholder="Bairro" class="form-control" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <input required type="text" placeholder="Cidade" name="cidade" id="cidade" class="form-control" />
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <input required type="number" placeholder=" CEP: 00000-000" name="cep" id="cep" class="form-control" />
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <select placeholder="Selecione um estado" type="text" name="estado" id="estado" class="form-control">
+                <option selected disabled>Selecione um estado</option>
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+                <option value="df">Distrito Federal</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="input-group">
+                <label for="info" class="col-form-label-sm"><i class="fas fa-info-circle icones-form"></i>Informações</label>
+                <textarea required class="form-control" name="informacoes" placeholder="Digite sua mensagem" id="info"
+                  rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+              <label class="form-check-label" for="invalidCheck">
+                Aceito receber mensagens promocionais.
+              </label>
+              <div class="invalid-feedback">
+                Você deve concordar antes de enviar.
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-lg" id="botaoform" type="submit">
+            Relizar cadastro
+          </button>
+        </form>
+      </div>
+    </div>
+    <!--final do container -->
+  </section>
+
+  <div class="modal fade" id="modal-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Inscrever-me na lista</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <h6>Preencha os campos para novidades e promoções</h6>
+          <form class="form-inline">
+            <div class="row">
+              <div class="form-group col-12">
+                <input type="text" class="form-control mb-2" name="nome" placeholder="Digite seu nome" required />
+              </div>
+              <div class="form-group col-12">
+                <input type="text" class="form-control mb-2" name="email" placeholder="Digite seu e-mail" required />
+              </div>
+              <div class="form-group col-12">
+                <button type="submit" class="btn btn-success"><i class="fas fa-envelope"></i> Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary mb-2" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      &copy;
+      <a href="https://front-end.victormkt.com.br">Fazenda Monte Alvão.</a>
+      Todos os direitos reservados.<br />
+      <small>Desenvolvido por: Victor Rodrigues</small>
+    </p>
+  </footer>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/525955c45f.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
