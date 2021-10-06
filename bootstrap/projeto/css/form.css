@@ -25,9 +25,7 @@ div.carousel-caption.d-none.d-md-block {
     rgba(0, 211, 104, 1) 100%
   );
 }
-select#estado.form-control {
-  color: #6c757d;
-}
+
 button.btn.btn-success i.fa,
 button.btn.btn-success i.fas {
   margin-right: 5px;
@@ -39,4 +37,9 @@ div.carousel-caption.d-none.d-md-block p i {
 .icones-form{
   margin-right: 5px;
   color: #009244bb;
+}
+select#uf.uf{
+  margin-bottom: 1rem;
+  width: 100%;
+  margin: 10px 0 5px 0;
 }

@@ -223,7 +223,7 @@ label {
   font-weight: bold;
   color: #005050;
 }
-input {
+input, select {
   width: 100%;
   margin: 10px 0 5px 0;
   color: #005050;
